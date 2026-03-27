@@ -724,15 +724,27 @@ function Session2() {
                     </ol>
                     <ScreenshotPlaceholder
                       title="Search for S3"
-                      description="Screenshot showing S3 search results"
-                      highlights={["Search bar", "S3 service"]}
+                      image='public/images/session-2/37-search-s3.png'
                     />
                   </Step>
 
                   <Step number={2} title="Create Bucket">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Click <strong>"Create bucket"</strong></li>
-                      <li>2. Bucket name: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">yourname-portfolio-2024</code></li>
+                        <ScreenshotPlaceholder
+                          title="Create Bucket Button"
+                          image='public/images/session-2/38-create-bucket-button.png'
+                        />
+                      <li>2. AWS Region: <strong>Asia Pacific (Mumbai) ap-south-1</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Choose Region"
+                          image='public/images/session-2/39-choose-region.png'
+                        />
+                      <li>3. Bucket name: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">yourname-portfolio-2026</code></li>
+                        <ScreenshotPlaceholder
+                          title="Bucket Name"
+                          image='public/images/session-2/40-bucket-name.png'
+                        />
                     </ol>
                     <div className="bg-violet-50 dark:bg-violet-500/10 border border-violet-200 dark:border-violet-500/30 rounded-lg p-3 my-3">
                       <p className="text-violet-700 dark:text-violet-400 text-sm">
@@ -740,14 +752,6 @@ function Session2() {
                         Add your name or random numbers to make it unique.
                       </p>
                     </div>
-                    <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm" start={3}>
-                      <li>3. AWS Region: <strong>Asia Pacific (Mumbai) ap-south-1</strong></li>
-                    </ol>
-                    <ScreenshotPlaceholder
-                      title="Create Bucket - Name & Region"
-                      description="Screenshot showing bucket creation form"
-                      highlights={["Create bucket button", "Bucket name field", "Region selector"]}
-                    />
                   </Step>
 
                   <Step number={3} title="Disable Public Access Block (Critical!)">
@@ -763,8 +767,7 @@ function Session2() {
                     </ol>
                     <ScreenshotPlaceholder
                       title="Disable Public Access Block"
-                      description="Screenshot showing Block Public Access settings"
-                      highlights={["Block all public access checkbox (UNCHECK)", "Acknowledgment checkbox (CHECK)"]}
+                      image='public/images/session-2/41-disable-public-access-block.png'
                     />
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm mt-3" start={4}>
                       <li>4. Scroll down and click <strong>"Create bucket"</strong></li>
@@ -780,7 +783,15 @@ function Session2() {
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Click on your bucket name to open it</li>
                       <li>2. Click <strong>"Upload"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Upload Files"
+                          image='public/images/session-2/42-upload-files.png'
+                        />
                       <li>3. Click <strong>"Add files"</strong> and select your files:</li>
+                        <ScreenshotPlaceholder
+                          title="Add Files"
+                          image='public/images/session-2/43-add-files.png'
+                        />
                     </ol>
                     <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 my-3">
                       <p className="text-gray-700 dark:text-gray-300 text-sm mb-2"><strong>Required files:</strong></p>
@@ -791,11 +802,6 @@ function Session2() {
                         <li>• <code className="text-gray-500">images/</code> - Your images folder (optional)</li>
                       </ul>
                     </div>
-                    <ScreenshotPlaceholder
-                      title="Upload Files"
-                      description="Screenshot showing upload interface with files selected"
-                      highlights={["Upload button", "Add files button", "Files list"]}
-                    />
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm mt-3" start={4}>
                       <li>4. Click <strong>"Upload"</strong> at the bottom</li>
                       <li>5. Wait for upload to complete, then click <strong>"Close"</strong></li>
@@ -805,25 +811,27 @@ function Session2() {
                   <Step number={5} title="Enable Static Website Hosting">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Go to <strong>"Properties"</strong> tab</li>
+                        <ScreenshotPlaceholder
+                          title="Properties Tab"
+                          image='public/images/session-2/44-properties-tab.png'
+                        />
                       <li>2. Scroll ALL the way down to <strong>"Static website hosting"</strong></li>
                       <li>3. Click <strong>"Edit"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Static Website Hosting Section"
+                          image='public/images/session-2/45-static-website-hosting-section.png'
+                        />
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Static Website Hosting Section"
-                      description="Screenshot showing Properties tab and Static website hosting section"
-                      highlights={["Properties tab", "Static website hosting section", "Edit button"]}
-                    />
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm mt-3" start={4}>
                       <li>4. Select <strong>"Enable"</strong></li>
                       <li>5. Index document: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">index.html</code></li>
+                        <ScreenshotPlaceholder
+                          title="Enable Static Website Hosting"
+                          image='public/images/session-2/46-enable-static-hosting.png'
+                        />
                       <li>6. Error document (optional): <code className="text-gray-500">error.html</code></li>
-                      <li>7. Click <strong>"Save changes"</strong></li>
+                      <li>7. Scroll down and Click <strong>"Save changes"</strong></li>
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Enable Static Hosting"
-                      description="Screenshot showing static hosting configuration"
-                      highlights={["Enable radio button", "Index document field", "Save changes button"]}
-                    />
                     <div className="bg-violet-50 dark:bg-violet-500/10 border border-violet-200 dark:border-violet-500/30 rounded-lg p-3 mt-3">
                       <p className="text-violet-700 dark:text-violet-400 text-sm">
                         <strong>Copy the endpoint URL!</strong> It will look like: <code className="text-xs">http://bucket-name.s3-website.ap-south-1.amazonaws.com</code>
@@ -835,15 +843,19 @@ function Session2() {
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Go to <strong>"Permissions"</strong> tab</li>
                       <li>2. Scroll to <strong>"Bucket policy"</strong> and click <strong>"Edit"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Bucket Policy Section"
+                          image='public/images/session-2/47-bucket-policy-section.png'
+                        />
                       <li>3. Paste this policy (replace YOUR-BUCKET-NAME with your actual bucket name):</li>
+                        
                     </ol>
                     <div className="mt-3">
                       <CodeBlock title="Bucket Policy - Replace YOUR-BUCKET-NAME">{bucketPolicy}</CodeBlock>
                     </div>
                     <ScreenshotPlaceholder
                       title="Bucket Policy Editor"
-                      description="Screenshot showing bucket policy editor"
-                      highlights={["Permissions tab", "Bucket policy section", "Edit button", "Policy editor"]}
+                      image='public/images/session-2/48-bucket-policy-editor.png'
                     />
                     <div className="bg-red-50 dark:bg-red-500/10 border border-red-200 dark:border-red-500/30 rounded-lg p-3 mt-3">
                       <p className="text-red-700 dark:text-red-400 text-sm font-medium">
@@ -853,6 +865,10 @@ function Session2() {
                     </div>
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm mt-3" start={4}>
                       <li>4. Click <strong>"Save changes"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Save Bucket Policy"
+                          image='public/images/session-2/49-save-bucket-policy.png'
+                        />
                     </ol>
                   </Step>
 
@@ -861,6 +877,11 @@ function Session2() {
                       <li>1. Go back to <strong>"Properties"</strong> tab</li>
                       <li>2. Scroll to <strong>"Static website hosting"</strong></li>
                       <li>3. Click on the <strong>Bucket website endpoint</strong> URL</li>
+                        <ScreenshotPlaceholder
+                          title="Click Website Endpoint"
+                          image='public/images/session-2/50-click-endpoint.png'
+                        />
+                      <li>4. Your website should open in a new tab! 🎉</li>
                     </ol>
                     <div className="bg-green-50 dark:bg-green-500/10 border border-green-200 dark:border-green-500/30 rounded-xl p-4 mt-4">
                       <div className="flex items-center gap-3 mb-2">
