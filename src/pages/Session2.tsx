@@ -323,14 +323,18 @@ function Session2() {
                   <Step number={2} title="Navigate to Billing Dashboard">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Click on your <strong>account name</strong> (top right corner)</li>
+                      <ScreenshotPlaceholder
+                        title="Account Menu"
+                        image="public/images/session-2/4-account-name-dropdown.png"
+                      />
                       <li>2. Select <strong>"Billing Dashboard"</strong> from dropdown</li>
+                      <ScreenshotPlaceholder
+                        title="Billing Dashboard"
+                        image="public/images/session-2/5-billing-dashboard-option.png"
+                      />
                     </ol>
 
-                    <ScreenshotPlaceholder
-                      title="Account Menu"
-                      description="Screenshot showing account dropdown menu"
-                      highlights={["Account name dropdown", "Billing Dashboard option"]}
-                    />
+                    
                     
                     <div className="bg-violet-50 dark:bg-violet-500/10 border border-violet-200 dark:border-violet-500/30 rounded-lg p-3 mt-3">
                       <p className="text-violet-700 dark:text-violet-400 text-sm">
@@ -342,39 +346,52 @@ function Session2() {
                   <Step number={3} title="Go to Budgets">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. In the left sidebar, click <strong>"Budgets"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Budgets Page"
+                          image='public/images/session-2/6-budgets-in-sidebar.png'
+                        />
                       <li>2. Click the <strong>"Create budget"</strong> button</li>
+                        <ScreenshotPlaceholder
+                          title="Create Budget Button"
+                          image='public/images/session-2/7-create-budget-button.png'
+                        />
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Budgets Page"
-                      description="Screenshot showing left sidebar with Budgets option"
-                      highlights={["Budgets in sidebar", "Create budget button"]}
-                    />
                   </Step>
 
                   <Step number={4} title="Choose Budget Type">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Select <strong>"Use a template (simplified)"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create Budget Button"
+                          image='public/images/session-2/8-use-template-option.png'
+                        />
                       <li>2. Choose <strong>"Monthly cost budget"</strong></li>
-                      <li>3. Click <strong>"Next"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Monthly Cost Budget"
+                          image='public/images/session-2/9-monthly-cost-budget.png'
+                        />
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Budget Type Selection"
-                      description="Screenshot showing budget template options"
-                      highlights={["Use a template option", "Monthly cost budget", "Next button"]}
-                    />
                   </Step>
 
                   <Step number={5} title="Configure Budget Amount">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Budget name: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">My-Monthly-Budget</code></li>
+                        <ScreenshotPlaceholder
+                          title="Budget name"
+                          image='public/images/session-2/10-budget-name.png'
+                        />
                       <li>2. Enter budgeted amount: <strong>$2.00</strong> (or ₹160)</li>
+                        <ScreenshotPlaceholder
+                          title="Budget amount"
+                          image='public/images/session-2/11-budget-amount.png'
+                        />
                       <li>3. Email recipients: <strong>Enter your email address</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Email recipients"
+                          image='public/images/session-2/12-email-recipients.png'
+                        />
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Budget Configuration"
-                      description="Screenshot showing budget amount and email fields"
-                      highlights={["Budget name field", "Amount field ($2)", "Email field"]}
-                    />
+                    
                     <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 mt-3">
                       <p className="text-gray-600 dark:text-gray-400 text-sm">
                         <strong>Why $2?</strong> This is enough for learning. You'll get alerts at 50%, 80%, and 100% of this amount.
@@ -386,8 +403,13 @@ function Session2() {
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Review your settings</li>
                       <li>2. Click <strong>"Create budget"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Review and Create Budget"
+                          image='public/images/session-2/13-review-create-budget.png'
+                        />
                       <li>3. You should see a success message!</li>
                     </ol>
+
                     <div className="bg-green-50 dark:bg-green-500/10 border border-green-200 dark:border-green-500/30 rounded-lg p-3 mt-3">
                       <p className="text-green-700 dark:text-green-400 text-sm font-medium flex items-center gap-2">
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -428,23 +450,33 @@ function Session2() {
                     </ol>
                     <ScreenshotPlaceholder
                       title="Search for IAM"
-                      description="Screenshot showing search bar with IAM search results"
-                      highlights={["Search bar", "IAM service (click this)"]}
+                      image="public/images/session-2/14-search-iam.png"
                     />
                   </Step>
 
                   <Step number={2} title="Create User Group">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. In left sidebar, click <strong>"User groups"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="User groups page"
+                          image='public/images/session-2/15-user-group.png'
+                        />
                       <li>2. Click <strong>"Create group"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create group button"
+                          image='public/images/session-2/16-create-group-button.png'
+                        />
                       <li>3. Group name: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">S3-Lab-Users</code></li>
+                        <ScreenshotPlaceholder
+                          title="Group name field"
+                          image='public/images/session-2/17-create-group-name.png'
+                        />
                       <li>4. <span className="text-red-600 dark:text-red-400">Don't attach any policy yet</span> - click <strong>"Create group"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create Group Finalize"
+                          image='public/images/session-2/18-create-group.png'
+                        />
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Create User Group"
-                      description="Screenshot showing User groups page and create form"
-                      highlights={["User groups in sidebar", "Create group button", "Group name field"]}
-                    />
                   </Step>
 
                   <Step number={3} title="Create Custom Policy">
@@ -453,22 +485,45 @@ function Session2() {
                     </p>
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. In left sidebar, click <strong>"Policies"</strong></li>
+                        <ScreenshotPlaceholder
+                            title="Policies Page"
+                            image='public/images/session-2/19-policies.png'
+                        />
                       <li>2. Click <strong>"Create policy"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create Policy Button"
+                          image='public/images/session-2/20-create-policy-button.png'
+                        />
                       <li>3. Click the <strong>"JSON"</strong> tab</li>
+                        <ScreenshotPlaceholder
+                          title="Policy Editor - JSON Tab"
+                          image='public/images/session-2/21-policy-json-tab.png'
+                        />
                       <li>4. Delete everything and paste this policy:</li>
                     </ol>
                     <div className="mt-3">
                       <CodeBlock title="Custom IAM Policy - Copy this exactly">{iamPolicy}</CodeBlock>
                     </div>
-                    <ScreenshotPlaceholder
-                      title="Policy JSON Editor"
-                      description="Screenshot showing the JSON policy editor"
-                      highlights={["JSON tab", "Policy editor area", "Paste policy here"]}
-                    />
+                        <ScreenshotPlaceholder
+                          title="Policy Editor - Paste JSON"
+                          image='public/images/session-2/22-policy-json-paste.png'
+                        />
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm mt-4" start={5}>
                       <li>5. Click <strong>"Next"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Policy Review Step"
+                          image='public/images/session-2/23-policy-review.png'
+                        />
                       <li>6. Policy name: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">S3-Only-Lab-Policy</code></li>
+                        <ScreenshotPlaceholder
+                          title="Policy Name"
+                          image='public/images/session-2/24-policy-name.png'
+                        />
                       <li>7. Click <strong>"Create policy"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create Policy Finalize"
+                          image='public/images/session-2/25-create-policy.png'
+                        />
                     </ol>
                     <div className="bg-violet-50 dark:bg-violet-500/10 border border-violet-200 dark:border-violet-500/30 rounded-lg p-3 mt-3">
                       <p className="text-violet-700 dark:text-violet-400 text-sm">
@@ -481,34 +536,57 @@ function Session2() {
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Go back to <strong>"User groups"</strong></li>
                       <li>2. Click on <strong>"S3-Lab-Users"</strong> group</li>
+                        <ScreenshotPlaceholder
+                          title="User Group List"
+                          image='public/images/session-2/26-user-group-list.png'
+                        />
                       <li>3. Go to <strong>"Permissions"</strong> tab</li>
+                        <ScreenshotPlaceholder
+                          title="Group Permissions Tab"
+                          image='public/images/session-2/27-group-permissions-tab.png'
+                        />
                       <li>4. Click <strong>"Add permissions"</strong> → <strong>"Attach policies"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Add Permissions to Group"
+                          image='public/images/session-2/28-add-permissions.png'
+                        />
                       <li>5. Search for <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">S3-Only-Lab-Policy</code></li>
                       <li>6. Check the box and click <strong>"Attach policies"</strong></li>
                     </ol>
                     <ScreenshotPlaceholder
                       title="Attach Policy to Group"
-                      description="Screenshot showing policy attachment interface"
-                      highlights={["Permissions tab", "Add permissions dropdown", "Search for policy", "Checkbox", "Attach button"]}
+                      image='public/images/session-2/29-attach-policy.png'
                     />
                   </Step>
 
                   <Step number={5} title="Create IAM User">
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. In left sidebar, click <strong>"Users"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Users Page"
+                          image='public/images/session-2/30-users-page.png'
+                        />
                       <li>2. Click <strong>"Create user"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create User Button"
+                          image='public/images/session-2/31-create-user-button.png'
+                        />
                       <li>3. User name: <code className="bg-gray-100 dark:bg-gray-800 px-2 py-0.5 rounded">lab-user</code></li>
                       <li>4. Check <strong>"Provide user access to AWS Management Console"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create User - Access Type"
+                          image='public/images/session-2/32-create-user-access-type.png'
+                        />
                       <li>5. Select <strong>"I want to create an IAM user"</strong></li>
                       <li>6. Choose <strong>"Autogenerated password"</strong></li>
                       <li>7. Check <strong>"User must create a new password at next sign-in"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create User - Password Options"
+                          image='public/images/session-2/33-create-user-password-options.png'
+                        />
                       <li>8. Click <strong>"Next"</strong></li>
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Create IAM User - Step 1"
-                      description="Screenshot showing user creation form"
-                      highlights={["User name field", "Console access checkbox", "Password options"]}
-                    />
+        
                   </Step>
 
                   <Step number={6} title="Add User to Group">
@@ -516,13 +594,16 @@ function Session2() {
                       <li>1. Select <strong>"Add user to group"</strong></li>
                       <li>2. Check the box for <strong>"S3-Lab-Users"</strong> group</li>
                       <li>3. Click <strong>"Next"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Add User to Group"
+                          image='public/images/session-2/34-add-user-to-group.png'
+                        />
                       <li>4. Click <strong>"Create user"</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Create User Finalize"
+                          image='public/images/session-2/35-create-user.png'
+                        />
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Add User to Group"
-                      description="Screenshot showing group selection"
-                      highlights={["Add to group option", "S3-Lab-Users checkbox", "Create user button"]}
-                    />
                   </Step>
 
                   <Step number={7} title="Save Credentials">
@@ -534,13 +615,13 @@ function Session2() {
                     <ol className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
                       <li>1. Click <strong>"Download .csv file"</strong> or copy the password</li>
                       <li>2. Copy the <strong>Console sign-in URL</strong></li>
+                        <ScreenshotPlaceholder
+                          title="Console Sign-In URL"
+                          image='public/images/session-2/36-console-sign-in-url.png'
+                        />
                       <li>3. Save these in a secure location</li>
                     </ol>
-                    <ScreenshotPlaceholder
-                      title="Save Credentials"
-                      description="Screenshot showing credentials page"
-                      highlights={["Download .csv button", "Console sign-in URL", "Password (copy this!)"]}
-                    />
+      
                     <div className="bg-green-50 dark:bg-green-500/10 border border-green-200 dark:border-green-500/30 rounded-lg p-3 mt-3">
                       <p className="text-green-700 dark:text-green-400 text-sm font-medium">
                         You can now sign out and sign in with your new IAM user for safer daily work!
